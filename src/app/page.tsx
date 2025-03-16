@@ -28,8 +28,8 @@ export default function Home() {
                 priority
               />
               <div>
-                <h1 className="text-xl font-bold">3402-398 Sayılı</h1>
-                <h2 className="text-sm">Lisanslı Harita Kadastro Mühendislik Bürosu</h2>
+                <h1 className="text-xl font-bold">3402-398 Sayılı Lisanslı Harita Kadastro Mühendisi</h1>
+                <h2 className="text-xl font-bold">Tayfur SİVRİ</h2>
               </div>
             </Link>
             <NavigationMenu>
@@ -80,25 +80,28 @@ export default function Home() {
                 <p className="text-lg mb-8 text-blue-100">
                   Lisanslı Harita Kadastro Mühendislik Büromuz ile tüm kadastro ve harita işlemlerinizde yanınızdayız.
                 </p>
-                <div className="space-x-4">
-                  <Button asChild variant="default" size="lg" className="bg-white text-blue-900 hover:bg-blue-50">
-                    <Link href="/iletisim">
-                      Bizimle İletişime Geçin
-                    </Link>
-                  </Button>
-                  <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-blue-800">
-                    <Link href="/hizmetler">
-                      Hizmetlerimizi İnceleyin
-                    </Link>
-                  </Button>
+                <div className="flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+                  <Link
+                    href="/iletisim"
+                    className="inline-flex items-center justify-center rounded-md bg-blue-600 px-6 py-3 text-sm font-medium text-white shadow-lg transition-colors hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
+                  >
+                    Bizimle İletişime Geçin
+                  </Link>
+                  <Link
+                    href="/hizmetler"
+                    className="inline-flex items-center justify-center rounded-md bg-blue-600 px-6 py-3 text-sm font-medium text-white shadow-lg transition-colors hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
+                  >
+                    Hizmetlerimizi İnceleyin
+                  </Link>
                 </div>
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/harita-kadastro.jpg"
-                  alt="Harita Kadastro Hizmetleri"
+                  src="/istanbul-uydu.jpg"
+                  alt="İstanbul Uydu Görüntüsü"
                   fill
                   className="object-cover"
+                  priority
                 />
               </div>
             </div>

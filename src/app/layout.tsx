@@ -5,11 +5,13 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "3402-398 Sayılı LIHKAB",
+  title: "Lihkab Büro",
   description: "3402-398 Sayılı Lisanslı Harita Kadastro Mühendislik Bürosu",
   icons: {
-    icon: '/lihkab_logo.jpg',
-  },
+    icon: [
+      { url: '/lihkab_logo.jpg', type: 'image/jpeg' }
+    ]
+  }
 };
 
 export default function RootLayout({
@@ -19,6 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr" suppressHydrationWarning>
+      <head>
+        <link rel="shortcut icon" type="image/jpeg" href="/lihkab_logo.jpg" />
+        <link rel="icon" type="image/jpeg" href="/lihkab_logo.jpg" sizes="any" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
