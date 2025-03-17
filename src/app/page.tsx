@@ -35,7 +35,7 @@ export default function Home() {
                 priority
               />
               <div>
-                <h1 className="text-xl font-bold text-white">3402-398 Sayılı LİHKAB</h1>
+                <h1 className="text-xl font-bold text-white">3402-398 Sayılı Arnavutköy LİHKAB</h1>
                 <h2 className="text-xl font-bold text-white">Tayfur SİVRİ</h2>
               </div>
             </Link>
@@ -181,9 +181,12 @@ export default function Home() {
               <div className="flex items-start space-x-4">
                 <Clock className="h-6 w-6 text-blue-800 mt-1" />
                 <div>
-                  <h4 className="font-semibold mb-2">Çalışma Saatleri</h4>
-                  <p className="text-gray-600">Pzt - Cuma: 09:00 - 18:00</p>
-                  <p className="text-gray-600">Cumartesi: 09:00 - 13:00</p>
+                  <h3 className="text-lg font-semibold mb-4">Çalışma Saatleri</h3>
+                  <ul className="space-y-2 text-gray-400">
+                    <li>Pazartesi - Cuma: 09:00 - 18:00</li>
+                    <li>Cumartesi: 09:00 - 13:00</li>
+                    <li>Pazar: Kapalı</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -240,7 +243,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-            <p className="text-gray-400">&copy; 2025 3402-398 Sayılı LIHKAB Bürosu. Tüm hakları saklıdır.</p>
+            <p className="text-gray-400">&copy; 2025 3402-398 Sayılı Arnavutköy LİHKAB Bürosu. Tüm hakları saklıdır.</p>
           </div>
         </div>
       </footer>
