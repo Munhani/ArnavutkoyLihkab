@@ -24,39 +24,39 @@ export default function Home() {
       {/* Header */}
       <header className="bg-blue-800 text-white py-4 sticky top-0 z-50">
         <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col md:flex-row md:justify-between md:items-center space-y-4 md:space-y-0">
             <Link href="/" className="flex items-center space-x-2">
               <Image
                 src="/lihkab_logo.jpg"
                 alt="LIHKAB Logo"
-                width={100}
-                height={100}
+                width={80}
+                height={80}
                 className="rounded-full"
                 priority
               />
-              <div>
-                <h1 className="text-xl font-bold text-white">3402-398 Sayılı Arnavutköy LİHKAB</h1>
-                <h2 className="text-xl font-bold text-white">Tayfur SİVRİ</h2>
+              <div className="flex flex-col">
+                <h1 className="text-lg md:text-xl font-bold text-white">3402-398 Sayılı Arnavutköy LİHKAB</h1>
+                <h2 className="text-lg md:text-xl font-bold text-white">Tayfur SİVRİ</h2>
               </div>
             </Link>
-            <nav>
-              <ul className="flex space-x-8">
-                <li className="w-20 text-center">
+            <nav className="w-full md:w-auto">
+              <ul className="flex flex-wrap justify-center md:flex-row md:space-x-8">
+                <li className="w-1/2 md:w-20 text-center py-2 md:py-0">
                   <Link href="/" className="text-white hover:text-gray-300">
                     Ana Sayfa
                   </Link>
                 </li>
-                <li className="w-24 text-center">
+                <li className="w-1/2 md:w-24 text-center py-2 md:py-0">
                   <Link href="/hizmetler" className="text-white hover:text-gray-300">
                     Hizmetlerimiz
                   </Link>
                 </li>
-                <li className="w-24 text-center">
+                <li className="w-1/2 md:w-24 text-center py-2 md:py-0">
                   <Link href="/hakkimizda" className="text-white hover:text-gray-300">
                     Hakkımızda
                   </Link>
                 </li>
-                <li className="w-16 text-center">
+                <li className="w-1/2 md:w-16 text-center py-2 md:py-0">
                   <Link href="/iletisim" className="text-white hover:text-gray-300">
                     İletişim
                   </Link>
@@ -69,32 +69,32 @@ export default function Home() {
 
       {/* Hero Section */}
       <main>
-        <section className="relative bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20">
+        <section className="relative bg-gradient-to-r from-blue-900 to-blue-700 text-white py-12 md:py-20">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
-                <h2 className="text-4xl font-bold mb-6">
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">
                   Profesyonel Kadastro ve Harita Hizmetleri
                 </h2>
-                <p className="text-lg mb-8 text-blue-100">
+                <p className="text-base md:text-lg mb-8 text-blue-100">
                   Lisanslı Harita Kadastro Mühendislik Büromuz ile tüm kadastro ve harita işlemlerinizde yanınızdayız.
                 </p>
                 <div className="flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
                     href="/iletisim"
-                    className="inline-flex items-center justify-center rounded-md bg-blue-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
+                    className="inline-flex items-center justify-center rounded-md bg-blue-600 px-4 md:px-6 py-2 md:py-3 text-sm font-medium text-white transition-colors hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
                   >
                     Bizimle İletişime Geçin
                   </Link>
                   <Link
                     href="/hizmetler"
-                    className="inline-flex items-center justify-center rounded-md bg-blue-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
+                    className="inline-flex items-center justify-center rounded-md bg-blue-600 px-4 md:px-6 py-2 md:py-3 text-sm font-medium text-white transition-colors hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
                   >
                     Hizmetlerimizi İnceleyin
                   </Link>
                 </div>
               </div>
-              <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
+              <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden shadow-xl">
                 <Image
                   src="/istanbul-uydu.jpg"
                   alt="İstanbul Uydu Görüntüsü"
@@ -108,10 +108,10 @@ export default function Home() {
         </section>
 
         {/* Hizmetler */}
-        <section className="py-20 bg-white">
+        <section className="py-12 md:py-20 bg-white">
           <div className="container mx-auto px-4">
-            <h3 className="text-3xl font-bold text-center mb-12">Sunduğumuz Hizmetler</h3>
-            <div className="grid md:grid-cols-3 gap-8">
+            <h3 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">Sunduğumuz Hizmetler</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
               <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
                 <div className="h-12 w-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
                   <MapPin className="h-6 w-6 text-blue-800" />

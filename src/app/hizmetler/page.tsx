@@ -7,39 +7,39 @@ export default function Hizmetler() {
       {/* Header */}
       <header className="bg-blue-800 text-white py-4 sticky top-0 z-50">
         <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col md:flex-row md:justify-between md:items-center space-y-4 md:space-y-0">
             <Link href="/" className="flex items-center space-x-2">
               <Image
                 src="/lihkab_logo.jpg"
                 alt="LIHKAB Logo"
-                width={100}
-                height={100}
+                width={80}
+                height={80}
                 className="rounded-full"
                 priority
               />
-              <div>
-                <h1 className="text-xl font-bold text-white">3402-398 Sayılı Arnavutköy LİHKAB</h1>
-                <h2 className="text-xl font-bold text-white">Tayfur SİVRİ</h2>
+              <div className="flex flex-col">
+                <h1 className="text-lg md:text-xl font-bold text-white">3402-398 Sayılı Arnavutköy LİHKAB</h1>
+                <h2 className="text-lg md:text-xl font-bold text-white">Tayfur SİVRİ</h2>
               </div>
             </Link>
-            <nav>
-              <ul className="flex space-x-8">
-                <li className="w-20 text-center">
+            <nav className="w-full md:w-auto">
+              <ul className="flex flex-wrap justify-center md:flex-row md:space-x-8">
+                <li className="w-1/2 md:w-20 text-center py-2 md:py-0">
                   <Link href="/" className="text-white hover:text-gray-300">
                     Ana Sayfa
                   </Link>
                 </li>
-                <li className="w-24 text-center">
+                <li className="w-1/2 md:w-24 text-center py-2 md:py-0">
                   <Link href="/hizmetler" className="text-white hover:text-gray-300">
                     Hizmetlerimiz
                   </Link>
                 </li>
-                <li className="w-24 text-center">
+                <li className="w-1/2 md:w-24 text-center py-2 md:py-0">
                   <Link href="/hakkimizda" className="text-white hover:text-gray-300">
                     Hakkımızda
                   </Link>
                 </li>
-                <li className="w-16 text-center">
+                <li className="w-1/2 md:w-16 text-center py-2 md:py-0">
                   <Link href="/iletisim" className="text-white hover:text-gray-300">
                     İletişim
                   </Link>
@@ -51,79 +51,85 @@ export default function Hizmetler() {
       </header>
 
       {/* Main Content */}
-      <div className="container mx-auto px-4 py-12">
-        <h1 className="text-3xl font-bold text-center mb-12">Hizmetlerimiz</h1>
+      <div className="container mx-auto px-4 py-8 md:py-12">
+        <h1 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">Hizmetlerimiz</h1>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Aplikasyon */}
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-xl font-semibold mb-4">Aplikasyon</h2>
             <p className="text-gray-600 mb-4">
-              Taşınmazların sınırlarının arazide gösterilmesi ve ölçüm işlemleri yapılması.
+              Taşınmazların zeminde işaretlenmesi ve ölçüm işlemlerinin yapılması hizmetleri.
             </p>
             <ul className="list-disc list-inside text-gray-600">
-              <li>Parsel köşe noktalarının belirlenmesi</li>
-              <li>Arazi ölçümleri</li>
-              <li>Sınır tespiti</li>
+              <li>Parsel köşe noktalarının zeminde işaretlenmesi</li>
+              <li>Yapı aplikasyonu</li>
+              <li>Bağımsız bölüm planı</li>
             </ul>
           </div>
 
+          {/* Cins Değişikliği */}
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-xl font-semibold mb-4">Cins Değişikliği</h2>
             <p className="text-gray-600 mb-4">
-              Tapu sicilinde kayıtlı taşınmazların cins ve nitelik değişikliği işlemleri.
+              Taşınmazların cins değişikliği işlemlerinin yapılması ve belgelendirilmesi.
             </p>
             <ul className="list-disc list-inside text-gray-600">
-              <li>Arsa vasfından bina vasfına geçiş</li>
-              <li>Tarla vasfından arsa vasfına geçiş</li>
-              <li>Bağımsız bölüm oluşturma</li>
+              <li>Arsa - Arazi cins değişikliği</li>
+              <li>Yapılı - Yapısız cins değişikliği</li>
+              <li>Kat mülkiyeti tesisi</li>
             </ul>
           </div>
 
+          {/* Birleştirme (Tevhit) */}
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h2 className="text-xl font-semibold mb-4">Parsellerin Birleştirilmesi</h2>
+            <h2 className="text-xl font-semibold mb-4">Birleştirme (Tevhit)</h2>
             <p className="text-gray-600 mb-4">
               Birden fazla parselin tek parsel haline getirilmesi işlemleri.
             </p>
             <ul className="list-disc list-inside text-gray-600">
-              <li>Tevhid işlemleri</li>
+              <li>Parsel birleştirme</li>
               <li>İmar düzenlemesi</li>
-              <li>Parsel optimizasyonu</li>
+              <li>Teknik rapor hazırlama</li>
             </ul>
           </div>
 
+          {/* Ayırma (İfraz) */}
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h2 className="text-xl font-semibold mb-4">Parsellerin Ayırma İşlemleri</h2>
+            <h2 className="text-xl font-semibold mb-4">Ayırma (İfraz)</h2>
             <p className="text-gray-600 mb-4">
-              Tek parselin birden fazla parsele bölünmesi işlemleri.
+              Bir parselin birden fazla parsele bölünmesi işlemleri.
             </p>
             <ul className="list-disc list-inside text-gray-600">
-              <li>İfraz işlemleri</li>
+              <li>Parsel ayırma</li>
+              <li>İmar planına göre ayırma</li>
               <li>Hisseli satış</li>
-              <li>Parsel bölünmesi</li>
             </ul>
           </div>
 
+          {/* Röperli Kroki */}
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-xl font-semibold mb-4">Röperli Kroki</h2>
             <p className="text-gray-600 mb-4">
-              Yapıların konumlarının ölçekli olarak gösterilmesi.
+              Detaylı ölçüm ve kroki hazırlama hizmetleri.
             </p>
             <ul className="list-disc list-inside text-gray-600">
-              <li>Bina aplikasyonu</li>
-              <li>Yapı röleve ölçümleri</li>
+              <li>Bina ve tesis ölçümü</li>
               <li>Detay alımı</li>
+              <li>Kroki hazırlama</li>
             </ul>
           </div>
 
+          {/* Diğer Hizmetler */}
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-xl font-semibold mb-4">Diğer Hizmetler</h2>
             <p className="text-gray-600 mb-4">
-              LIHKAB büromuzun sunduğu diğer teknik hizmetler.
+              İhtiyaçlarınıza özel çözümler ve danışmanlık hizmetleri.
             </p>
             <ul className="list-disc list-inside text-gray-600">
-              <li>Teknik bilirkişilik</li>
-              <li>Danışmanlık hizmetleri</li>
-              <li>Proje kontrollük hizmetleri</li>
+              <li>Teknik danışmanlık</li>
+              <li>Proje kontrolü</li>
+              <li>Özel ölçümler</li>
             </ul>
           </div>
         </div>
