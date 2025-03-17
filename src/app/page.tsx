@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { Metadata } from "next";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -10,6 +11,12 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "3402-398 Sayılı LİHKAB - Tayfur SİVRİ",
+  description: "Arnavutköy Lisanslı Harita Kadastro Mühendislik Bürosu - Profesyonel kadastro ve harita hizmetleri",
+  keywords: "Arnavutköy, Lihkab, Harita, Kadastro, Aplikasyon, Cins Değişikliği, İstanbul, Başakşehir, Plankote, Drone, Dron, yol projesi, Bina projesi, Çatalca, parselasyon, Kazık Çakma, Lisanslı Harita, Reality Model, itwin capture, openroads, inroads, yol projesi, baraj projesi",
+};
 
 export default function Home() {
   return (
