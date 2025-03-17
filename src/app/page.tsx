@@ -22,48 +22,40 @@ export default function Home() {
               <Image
                 src="/lihkab_logo.jpg"
                 alt="LIHKAB Logo"
-                width={50}
-                height={50}
+                width={100}
+                height={100}
                 className="rounded-full"
                 priority
               />
               <div>
-                <h1 className="text-xl font-bold">3402-398 Sayılı Lisanslı Harita Kadastro Mühendisi</h1>
-                <h2 className="text-xl font-bold">Tayfur SİVRİ</h2>
+                <h1 className="text-xl font-bold text-white">3402-398 Sayılı LİHKAB</h1>
+                <h2 className="text-xl font-bold text-white">Tayfur SİVRİ</h2>
               </div>
             </Link>
-            <NavigationMenu>
-              <NavigationMenuList>
-                <NavigationMenuItem>
-                  <Link href="/" legacyBehavior passHref>
-                    <NavigationMenuLink className="text-white hover:text-blue-200 px-4 py-2">
-                      Ana Sayfa
-                    </NavigationMenuLink>
+            <nav>
+              <ul className="flex space-x-8">
+                <li className="w-20 text-center">
+                  <Link href="/" className="text-white hover:text-gray-300">
+                    Ana Sayfa
                   </Link>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <Link href="/hizmetler" legacyBehavior passHref>
-                    <NavigationMenuLink className="text-white hover:text-blue-200 px-4 py-2">
-                      Hizmetlerimiz
-                    </NavigationMenuLink>
+                </li>
+                <li className="w-24 text-center">
+                  <Link href="/hizmetler" className="text-white hover:text-gray-300">
+                    Hizmetlerimiz
                   </Link>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <Link href="/hakkimizda" legacyBehavior passHref>
-                    <NavigationMenuLink className="text-white hover:text-blue-200 px-4 py-2">
-                      Hakkımızda
-                    </NavigationMenuLink>
+                </li>
+                <li className="w-24 text-center">
+                  <Link href="/hakkimizda" className="text-white hover:text-gray-300">
+                    Hakkımızda
                   </Link>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <Link href="/iletisim" legacyBehavior passHref>
-                    <NavigationMenuLink className="text-white hover:text-blue-200 px-4 py-2">
-                      İletişim
-                    </NavigationMenuLink>
+                </li>
+                <li className="w-16 text-center">
+                  <Link href="/iletisim" className="text-white hover:text-gray-300">
+                    İletişim
                   </Link>
-                </NavigationMenuItem>
-              </NavigationMenuList>
-            </NavigationMenu>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </header>
@@ -83,13 +75,13 @@ export default function Home() {
                 <div className="flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
                     href="/iletisim"
-                    className="inline-flex items-center justify-center rounded-md bg-blue-600 px-6 py-3 text-sm font-medium text-white shadow-lg transition-colors hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
+                    className="inline-flex items-center justify-center rounded-md bg-blue-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
                   >
                     Bizimle İletişime Geçin
                   </Link>
                   <Link
                     href="/hizmetler"
-                    className="inline-flex items-center justify-center rounded-md bg-blue-600 px-6 py-3 text-sm font-medium text-white shadow-lg transition-colors hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
+                    className="inline-flex items-center justify-center rounded-md bg-blue-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
                   >
                     Hizmetlerimizi İnceleyin
                   </Link>
@@ -122,14 +114,18 @@ export default function Home() {
               </div>
               <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
                 <div className="h-12 w-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
-                  <MapPin className="h-6 w-6 text-blue-800" />
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  </svg>
                 </div>
                 <h4 className="text-xl font-semibold mb-3">Cins Değişikliği</h4>
                 <p className="text-gray-600">Tapu sicilinde kayıtlı taşınmazların cins ve nitelik değişikliği işlemleri</p>
               </div>
               <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
                 <div className="h-12 w-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
-                  <MapPin className="h-6 w-6 text-blue-800" />
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                  </svg>
                 </div>
                 <h4 className="text-xl font-semibold mb-3">Parsellerin Birleştirilmesi</h4>
                 <p className="text-gray-600">Birden fazla parselin tek parsel haline getirilmesi işlemleri</p>
@@ -146,21 +142,33 @@ export default function Home() {
                 <MapPin className="h-6 w-6 text-blue-800 mt-1" />
                 <div>
                   <h4 className="font-semibold mb-2">Adres</h4>
-                  <p className="text-gray-600">[Büro Adresi]</p>
+                  <a 
+                    href="https://maps.google.com/?q=Karlıbayır+Mahallesi+Selçuklu+Caddesi+No:5+D:11+Arnavutköy+İstanbul" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-gray-600 hover:text-blue-600 transition-colors"
+                  >
+                    Karlıbayır Mahallesi Selçuklu Caddesi No:5 D:11 Arnavutköy/İstanbul
+                  </a>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
                 <Phone className="h-6 w-6 text-blue-800 mt-1" />
                 <div>
                   <h4 className="font-semibold mb-2">Telefon</h4>
-                  <p className="text-gray-600">[Telefon Numarası]</p>
+                  <p className="text-gray-600">+90 544 597 9600</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
                 <Mail className="h-6 w-6 text-blue-800 mt-1" />
                 <div>
                   <h4 className="font-semibold mb-2">E-posta</h4>
-                  <p className="text-gray-600">[E-posta Adresi]</p>
+                  <a 
+                    href="mailto:bilgi@arnavutkoylihkab.com" 
+                    className="text-gray-600 hover:text-blue-600 transition-colors"
+                  >
+                    bilgi@arnavutkoylihkab.com
+                  </a>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -199,21 +207,33 @@ export default function Home() {
               <ul className="space-y-2 text-gray-400">
                 <li className="flex items-center space-x-2">
                   <MapPin className="h-4 w-4" />
-                  <span>[Büro Adresi]</span>
+                  <a 
+                    href="https://maps.google.com/?q=Karlıbayır+Mahallesi+Selçuklu+Caddesi+No:5+D:11+Arnavutköy+İstanbul" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="hover:text-white transition-colors"
+                  >
+                    Karlıbayır Mahallesi Selçuklu Caddesi No:5 D:11 Arnavutköy/İstanbul
+                  </a>
                 </li>
                 <li className="flex items-center space-x-2">
                   <Phone className="h-4 w-4" />
-                  <span>[Telefon Numarası]</span>
+                  <span>+90 544 597 9600</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <Mail className="h-4 w-4" />
-                  <span>[E-posta Adresi]</span>
+                  <a 
+                    href="mailto:bilgi@arnavutkoylihkab.com"
+                    className="hover:text-white transition-colors"
+                  >
+                    bilgi@arnavutkoylihkab.com
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-            <p className="text-gray-400">&copy; 2024 3402-398 Sayılı LIHKAB Bürosu. Tüm hakları saklıdır.</p>
+            <p className="text-gray-400">&copy; 2025 3402-398 Sayılı LIHKAB Bürosu. Tüm hakları saklıdır.</p>
           </div>
         </div>
       </footer>
