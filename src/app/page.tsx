@@ -171,7 +171,7 @@ export default function Home() {
                 <Phone className="h-6 w-6 text-blue-800 mt-1" />
                 <div>
                   <h4 className="font-semibold mb-2">Telefon</h4>
-                  <p className="text-gray-600">+90 544 597 9600</p>
+                  <a href="tel:+905445979600" className="text-gray-600 hover:text-blue-600 transition-colors">+90 544 597 9600</a>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -236,7 +236,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center space-x-2">
                   <Phone className="h-4 w-4" />
-                  <span>+90 544 597 9600</span>
+                  <a href="tel:+905445979600" className="hover:text-white transition-colors">+90 544 597 9600</a>
                 </li>
                 <li className="flex items-center space-x-2">
                   <Mail className="h-4 w-4" />

@@ -142,7 +142,7 @@ export default function Hakkimizda() {
                   <span>Karlıbayır Mahallesi İhtişam Sokak No:6 D:1 Arnavutköy İSTANBUL</span>
                 </li>
                 <li className="flex items-center space-x-2">
-                  <span>+90 544 597 9600</span>
+                  <a href="tel:+905445979600" className="hover:text-white transition-colors">+90 544 597 9600</a>
                 </li>
                 <li className="flex items-center space-x-2">
                   <span>bilgi@arnavutkoylihkab.com</span>
