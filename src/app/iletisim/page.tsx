@@ -15,20 +15,25 @@ export default function Iletisim() {
       <header className="bg-blue-800 text-white py-4 sticky top-0 z-50">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row md:justify-between md:items-center space-y-4 md:space-y-0">
-            <Link href="/" className="flex items-center space-x-2">
-              <Image
-                src="/lihkab_logo.jpg"
-                alt="LIHKAB Logo"
-                width={80}
-                height={80}
-                className="rounded-full"
-                priority
-              />
-              <div className="flex flex-col">
-                <h1 className="text-base md:text-xl font-bold text-white">3402-398 Sayılı Arnavutköy LİHKAB</h1>
-                <h2 className="text-base md:text-xl font-bold text-white">Tayfur SİVRİ · <a href="tel:+905445979600" className="font-normal text-sm md:text-base text-white/90 hover:text-white">+90 544 597 9600</a></h2>
-              </div>
-            </Link>
+            <div className="flex items-center space-x-2">
+              <Link href="/" className="flex items-center space-x-2">
+                <Image
+                  src="/lihkab_logo.jpg"
+                  alt="LIHKAB Logo"
+                  width={80}
+                  height={80}
+                  className="rounded-full"
+                  priority
+                />
+                <div className="flex flex-col">
+                  <h1 className="text-base md:text-xl font-bold text-white">3402-398 Sayılı Arnavutköy LİHKAB</h1>
+                  <h2 className="text-base md:text-xl font-bold text-white">Tayfur SİVRİ</h2>
+                </div>
+              </Link>
+              <a href="tel:+905445979600" className="font-normal text-sm md:text-base text-white/90 hover:text-white whitespace-nowrap ml-1">
+                +90 544 597 9600
+              </a>
+            </div>
             <nav className="w-full md:w-auto">
               <ul className="flex flex-wrap justify-center md:flex-row md:space-x-8">
                 <li className="w-1/2 md:w-auto text-center py-2 md:py-0">
