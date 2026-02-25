@@ -131,7 +131,7 @@ export default function Hakkimizda() {
               <h3 className="text-lg font-semibold mb-4">İletişim</h3>
               <ul className="space-y-2 text-gray-400">
                 <li className="flex items-center space-x-2">
-                  <span>Karlıbayır Mahallesi Selçuklu Caddesi No:5 D:11 Arnavutköy/İstanbul</span>
+                  <span>Karlıbayır Mahallesi İhtişam Sokak No:6 D:1 Arnavutköy İSTANBUL</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <span>+90 544 597 9600</span>
@@ -152,8 +152,8 @@ export default function Hakkimizda() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Çalışma Saatleri</h3>
               <ul className="space-y-2 text-gray-400">
-                <li>Pazartesi - Cuma: 09:00 - 18:00</li>
-                <li>Cumartesi: 09:00 - 13:00</li>
+                <li>Hafta İçi 09:00 - 18:00</li>
+                <li>Hafta Sonu Cumartesi 09:00 - 13:00</li>
                 <li>Pazar: Kapalı</li>
               </ul>
             </div>

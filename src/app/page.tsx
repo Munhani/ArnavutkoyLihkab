@@ -15,7 +15,7 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 export const metadata: Metadata = {
   title: "3402-398 Sayılı LİHKAB - Tayfur SİVRİ",
   description: "Arnavutköy Lisanslı Harita Kadastro Mühendislik Bürosu - Profesyonel kadastro ve harita hizmetleri",
-  keywords: "Arnavutköy, Lihkab, Harita, Kadastro, Aplikasyon, Cins Değişikliği, İstanbul, Başakşehir, Plankote, Drone, Dron, yol projesi, Bina projesi, Çatalca, parselasyon, Kazık Çakma, Lisanslı Harita, Reality Model, itwin capture, openroads, inroads, yol projesi, baraj projesi",
+  keywords: "Arnavutköy, Lihkab, Harita, Kadastro, Aplikasyon, Cins Değişikliği, İstanbul, Başakşehir, Plankote, Drone, Dron, yol projesi, Bina projesi, Çatalca, parselasyon, Kazık Çakma, Lisanslı Harita, Reality Model, itwin capture, openroads, inroads, yol projesi, baraj projesi, Arnavutköy Harita, Arnavutköy Kadastro, Çatalca Kadastro, Başakşehir Kadastro, Drone ölçümleri, Drone, Dron Ölçümleri, Dron",
 };
 
 export default function Home() {
@@ -150,12 +150,12 @@ export default function Home() {
                 <div>
                   <h4 className="font-semibold mb-2">Adres</h4>
                   <a 
-                    href="https://maps.google.com/?q=Karlıbayır+Mahallesi+Selçuklu+Caddesi+No:5+D:11+Arnavutköy+İstanbul" 
+                    href="https://maps.google.com/?q=Karlıbayır+Mahallesi+İhtişam+Sokak+No:6+D:1+Arnavutköy+İSTANBUL" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="text-gray-600 hover:text-blue-600 transition-colors"
                   >
-                    Karlıbayır Mahallesi Selçuklu Caddesi No:5 D:11 Arnavutköy/İstanbul
+                    Karlıbayır Mahallesi İhtişam Sokak No:6 D:1 Arnavutköy İSTANBUL
                   </a>
                 </div>
               </div>
@@ -183,8 +183,8 @@ export default function Home() {
                 <div>
                   <h3 className="text-lg font-semibold mb-4">Çalışma Saatleri</h3>
                   <ul className="space-y-2 text-gray-400">
-                    <li>Pazartesi - Cuma: 09:00 - 18:00</li>
-                    <li>Cumartesi: 09:00 - 13:00</li>
+                    <li>Hafta İçi 09:00 - 18:00</li>
+                    <li>Hafta Sonu Cumartesi 09:00 - 13:00</li>
                     <li>Pazar: Kapalı</li>
                   </ul>
                 </div>
@@ -218,12 +218,12 @@ export default function Home() {
                 <li className="flex items-center space-x-2">
                   <MapPin className="h-4 w-4" />
                   <a 
-                    href="https://maps.google.com/?q=Karlıbayır+Mahallesi+Selçuklu+Caddesi+No:5+D:11+Arnavutköy+İstanbul" 
+                    href="https://maps.google.com/?q=Karlıbayır+Mahallesi+İhtişam+Sokak+No:6+D:1+Arnavutköy+İSTANBUL" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="hover:text-white transition-colors"
                   >
-                    Karlıbayır Mahallesi Selçuklu Caddesi No:5 D:11 Arnavutköy/İstanbul
+                    Karlıbayır Mahallesi İhtişam Sokak No:6 D:1 Arnavutköy İSTANBUL
                   </a>
                 </li>
                 <li className="flex items-center space-x-2">

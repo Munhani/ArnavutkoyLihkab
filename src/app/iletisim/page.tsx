@@ -6,7 +6,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-import { MapPinIcon, PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
+import { MapPinIcon, PhoneIcon, EnvelopeIcon, MapIcon } from "@heroicons/react/24/outline";
 
 export default function Iletisim() {
   return (
@@ -68,7 +68,7 @@ export default function Iletisim() {
                 <div className="flex items-start space-x-2">
                   <MapPinIcon className="h-5 w-5 text-blue-800 mt-1 flex-shrink-0" />
                   <p className="text-gray-600 text-sm md:text-base">
-                    Karlıbayır Mahallesi Selçuklu Caddesi No:5 D:11 Arnavutköy/İstanbul
+                    Karlıbayır Mahallesi İhtişam Sokak No:6 D:1 Arnavutköy İSTANBUL
                   </p>
                 </div>
                 <div className="flex items-center space-x-2">
@@ -93,11 +93,11 @@ export default function Iletisim() {
               <h2 className="text-lg md:text-xl font-semibold mb-4">Çalışma Saatleri</h2>
               <div className="space-y-2">
                 <div className="flex justify-between">
-                  <span className="text-gray-600 text-sm md:text-base">Pazartesi - Cuma:</span>
+                  <span className="text-gray-600 text-sm md:text-base">Hafta İçi:</span>
                   <span className="text-gray-600 text-sm md:text-base">09:00 - 18:00</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-gray-600 text-sm md:text-base">Cumartesi:</span>
+                  <span className="text-gray-600 text-sm md:text-base">Hafta Sonu Cumartesi:</span>
                   <span className="text-gray-600 text-sm md:text-base">09:00 - 13:00</span>
                 </div>
                 <div className="flex justify-between">
@@ -105,12 +105,21 @@ export default function Iletisim() {
                   <span className="text-gray-600 text-sm md:text-base">Kapalı</span>
                 </div>
               </div>
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=41.1839486056073,28.719020632953676"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-md bg-blue-800 px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
+              >
+                <MapIcon className="h-5 w-5" />
+                Yol tarifi al
+              </a>
             </div>
           </div>
 
           <div className="h-[300px] md:h-[500px] rounded-lg overflow-hidden shadow-md">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3003.471747225656!2d28.71661937587269!3d41.18321127131373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab2b6312b7e4b%3A0x9f0c7b0e7c75a7d2!2zS2FybMSxYmF5xLFyLCBTZWzDp3VrbHUgQ2QuIE5vOjUsIDM0Mjc1IEFybmF2dXRrw7Z5L8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1710604844015!5m2!1str!2str"
+              src="https://www.google.com/maps?q=41.1839486056073,28.719020632953676+(Arnavutk%C3%B6y+Lihkab)&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -130,7 +139,7 @@ export default function Iletisim() {
               <h3 className="text-lg font-semibold mb-3 md:mb-4">İletişim</h3>
               <ul className="space-y-2 text-gray-400 text-sm md:text-base">
                 <li className="flex items-start space-x-2">
-                  <span>Karlıbayır Mahallesi Selçuklu Caddesi No:5 D:11 Arnavutköy/İstanbul</span>
+                  <span>Karlıbayır Mahallesi İhtişam Sokak No:6 D:1 Arnavutköy İSTANBUL</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <span>+90 544 597 9600</span>
@@ -151,8 +160,8 @@ export default function Iletisim() {
             <div>
               <h3 className="text-lg font-semibold mb-3 md:mb-4">Çalışma Saatleri</h3>
               <ul className="space-y-2 text-gray-400 text-sm md:text-base">
-                <li>Pazartesi - Cuma: 09:00 - 18:00</li>
-                <li>Cumartesi: 09:00 - 13:00</li>
+                <li>Hafta İçi 09:00 - 18:00</li>
+                <li>Hafta Sonu Cumartesi 09:00 - 13:00</li>
                 <li>Pazar: Kapalı</li>
               </ul>
             </div>
