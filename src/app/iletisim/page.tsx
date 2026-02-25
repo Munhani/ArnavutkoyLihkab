@@ -15,7 +15,7 @@ export default function Iletisim() {
       <header className="bg-blue-800 text-white py-4 sticky top-0 z-50">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row md:justify-between md:items-center space-y-4 md:space-y-0">
-            <div className="flex items-center space-x-2">
+            <div className="flex flex-col">
               <Link href="/" className="flex items-center space-x-2">
                 <Image
                   src="/lihkab_logo.jpg"
@@ -30,9 +30,12 @@ export default function Iletisim() {
                   <h2 className="text-base md:text-xl font-bold text-white">Tayfur SİVRİ</h2>
                 </div>
               </Link>
-              <a href="tel:+905445979600" className="font-normal text-sm md:text-base text-white/90 hover:text-white whitespace-nowrap ml-1">
-                +90 544 597 9600
-              </a>
+              <div className="flex items-center space-x-2 mt-0.5">
+                <div className="w-20 flex-shrink-0" aria-hidden />
+                <a href="tel:+905445979600" className="font-normal text-sm md:text-base text-white/90 hover:text-white">
+                  +90 544 597 9600
+                </a>
+              </div>
             </div>
             <nav className="w-full md:w-auto">
               <ul className="flex flex-wrap justify-center md:flex-row md:space-x-8">
