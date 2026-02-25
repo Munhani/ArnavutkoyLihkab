@@ -19,7 +19,7 @@ export default function Hizmetler() {
               />
               <div className="flex flex-col">
                 <h1 className="text-lg md:text-xl font-bold text-white">3402-398 Sayılı Arnavutköy LİHKAB</h1>
-                <h2 className="text-lg md:text-xl font-bold text-white">Tayfur SİVRİ</h2>
+                <h2 className="text-lg md:text-xl font-bold text-white">Tayfur SİVRİ · <a href="tel:+905445979600" className="font-normal text-sm md:text-base text-white/90 hover:text-white">+90 544 597 9600</a></h2>
               </div>
             </Link>
             <nav className="w-full md:w-auto">

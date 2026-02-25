@@ -1,0 +1,53 @@
+﻿=== 1. git status ===
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   package-lock.json
+	modified:   package.json
+	modified:   src/app/hakkimizda/page.tsx
+	modified:   src/app/hizmetler/page.tsx
+	modified:   src/app/iletisim/page.tsx
+	modified:   src/app/page.tsx
+
+no changes added to commit (use "git add" and/or "git commit --trailer "Co-authored-by: Cursor <cursoragent@cursor.com>" -a")
+
+
+=== 2. git log -1 --oneline ===
+
+f8805c3 first commit
+
+
+=== 3. git add -A ===
+
+(no output)
+
+
+=== 4. git status ===
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   package-lock.json
+	modified:   package.json
+	modified:   src/app/hakkimizda/page.tsx
+	modified:   src/app/hizmetler/page.tsx
+	modified:   src/app/iletisim/page.tsx
+	modified:   src/app/page.tsx
+
+
+=== 5. git commit --trailer "Co-authored-by: Cursor <cursoragent@cursor.com>" -m "Adres Ihtisam Sokak, harita koordinatlari, Pazar Kapali, Yol tarifi al butonu" ===
+
+[main 93dac5b] Adres Ihtisam Sokak, harita koordinatlari, Pazar Kapali, Yol tarifi al butonu
+ 6 files changed, 262 insertions(+), 25 deletions(-)
+
+
+=== 6. git push origin main ===
+
+To https://github.com/Munhani/ArnavutkoyLihkab.git
+   f8805c3..93dac5b  main -> main
