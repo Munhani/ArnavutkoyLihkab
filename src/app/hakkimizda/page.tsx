@@ -160,14 +160,14 @@ export default function Hakkimizda() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Çalışma Saatleri</h3>
               <ul className="space-y-2 text-gray-400">
-                <li>Hafta İçi 09:00 - 18:00</li>
+                <li>Hafta İçi 09:00 - 12:00, 13:00 - 18:00</li>
                 <li>Hafta Sonu Cumartesi 09:00 - 13:00</li>
                 <li>Pazar: Kapalı</li>
               </ul>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-            <p className="text-gray-400">&copy; 2025 3402-398 Sayılı Arnavutköy LİHKAB Bürosu. Tüm hakları saklıdır.</p>
+            <p className="text-gray-400">&copy; 2026 3402-398 Sayılı Arnavutköy LİHKAB Bürosu. Tüm hakları saklıdır.</p>
           </div>
         </div>
       </footer>

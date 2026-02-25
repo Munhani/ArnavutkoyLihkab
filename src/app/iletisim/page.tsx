@@ -102,7 +102,7 @@ export default function Iletisim() {
               <div className="space-y-2">
                 <div className="flex justify-between">
                   <span className="text-gray-600 text-sm md:text-base">Hafta İçi:</span>
-                  <span className="text-gray-600 text-sm md:text-base">09:00 - 18:00</span>
+                  <span className="text-gray-600 text-sm md:text-base">09:00 - 12:00, 13:00 - 18:00</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600 text-sm md:text-base">Hafta Sonu Cumartesi:</span>
@@ -168,14 +168,14 @@ export default function Iletisim() {
             <div>
               <h3 className="text-lg font-semibold mb-3 md:mb-4">Çalışma Saatleri</h3>
               <ul className="space-y-2 text-gray-400 text-sm md:text-base">
-                <li>Hafta İçi 09:00 - 18:00</li>
+                <li>Hafta İçi 09:00 - 12:00, 13:00 - 18:00</li>
                 <li>Hafta Sonu Cumartesi 09:00 - 13:00</li>
                 <li>Pazar: Kapalı</li>
               </ul>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-6 md:mt-8 pt-6 md:pt-8 text-center">
-            <p className="text-gray-400 text-sm md:text-base">&copy; 2025 3402-398 Sayılı Arnavutköy LİHKAB Bürosu. Tüm hakları saklıdır.</p>
+            <p className="text-gray-400 text-sm md:text-base">&copy; 2026 3402-398 Sayılı Arnavutköy LİHKAB Bürosu. Tüm hakları saklıdır.</p>
           </div>
         </div>
       </footer>
